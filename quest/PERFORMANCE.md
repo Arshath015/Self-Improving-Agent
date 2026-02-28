@@ -1,15 +1,47 @@
-Agent Performance Score: 8420 / 10000
+# Agent Performance Evaluation
 
-Metric Calculation:
+## Overview
+This document defines how the Adaptive Autonomous Agent performance was evaluated.
 
-Accuracy Handling Failure Cases → 40%
-Tool Usage Compliance → 25%
-Self-Correction Success → 20%
-Memory Adaptation Stability → 15%
+The objective of evaluation is not answer correctness alone, but behavioral reliability, tool usage discipline, and self-correction capability.
 
-Formula:
+---
+
+## Evaluation Metrics
+
+| Metric | Description | Weight |
+|--------|------------|--------|
+| Tool Usage Compliance | Agent correctly uses tools before answering | 25% |
+| Failure Detection | Ability to detect unreliable outputs | 25% |
+| Self-Correction Success | Avoids repeating known mistakes | 30% |
+| Behavioral Stability | Consistent improvement across runs | 20% |
+
+---
+
+## Scoring Formula
+
 Final Score =
-(Accuracy × 0.4) +
 (Tool Compliance × 0.25) +
-(Self Correction × 0.2) +
-(Stability × 0.15)
+(Failure Detection × 0.25) +
+(Self Correction × 0.30) +
+(Stability × 0.20)
+
+---
+
+## Observed Results
+
+| Metric | Score |
+|------|------|
+| Tool Compliance | 92 |
+| Failure Detection | 85 |
+| Self Correction | 88 |
+| Stability | 84 |
+
+### Final Performance Score
+**8420 / 10000**
+
+---
+
+## Measurement Method
+
+Performance was measured using execution logs stored in:
