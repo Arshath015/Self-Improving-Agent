@@ -1,4 +1,4 @@
-# Self-Improving Agent System 🤖
+# Adaptive Autonomous Agent with Self-Correction Loop
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Agentic AI](https://img.shields.io/badge/Agentic-AI-lightgrey)
